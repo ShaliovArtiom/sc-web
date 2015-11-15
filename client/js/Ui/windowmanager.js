@@ -71,6 +71,16 @@ SCWeb.ui.WindowManager = {
                     '</html>');
             printDocument.close();
         });
+
+        $('#hypertext_button').click(function () {
+            var addr = $('#window-container').find('div.scs-scn-keyword').find('a.scs-scn-element').attr('sc_addr');
+            var lang_addr = SCWeb.core.Translation.getCurrentLanguage();
+            SCWeb.core.Server.resolveScAddr(["ui_menu_file_for_finding_hypertext"],
+                function (data) {
+                    var cmd = data["ui_menu_file_for_finding_hypertext"];
+                    SCWeb.core.Main.doCommand(cmd, [addr, lang_addr]);
+                });
+        });
         
         // listen translation events
         SCWeb.core.EventManager.subscribe("translation/update", this, this.updateTranslation);
