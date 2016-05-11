@@ -80,6 +80,14 @@
     <div id="main-container" class="main-container row">
         <div class="col-xs-2 col-sm-2 col-md-2">
             <div id="window-header-tools" class="pull-right">
+                <div id="search-panel">
+                    <form role="search">
+                        <div class="form-group">
+                            <input id="search-input" type="text" class="typeahead form-control" x-webkit-speech sc_control_sys_idtf="ui_control_search_idtf_edit" placeholder="Search..." data-provide="typeahead" autocomplete="off">                            
+                        </div>
+                      {# <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button> #}
+                    </form>
+                </div>
                 <div class="btn-group">
                     <button id="hypertext_button" type="button" class="btn btn-success ">
                         <span class="glyphicon glyphicon-font"></span>
@@ -95,15 +103,7 @@
                     <button type="button" class="btn btn-default" id="history-item-print" sc_control_sys_idtf="ui_control_print_window_content">
                         <span class="glyphicon glyphicon-print"></span>
                     </button>
-                </div>
                 
-                <div id="search-panel">
-                    <form role="search">
-                        <div class="form-group">
-                            <input id="search-input" type="text" class="typeahead form-control" x-webkit-speech sc_control_sys_idtf="ui_control_search_idtf_edit" placeholder="Search..." data-provide="typeahead" autocomplete="off">                            
-                        </div>
-                      {# <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button> #}
-                    </form>
                 </div>
             </div>
             <div>
@@ -168,7 +168,7 @@
         $("#hide-section-button").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Скрыть панель"});
         $("#language-select").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Выбор языка"});
         $("#auth-user-panel").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Вы можете авторизоваться в системе"});
-        $("#search-input").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Введите свой запрос"});
+        $("#search-input").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Введите ключевое слово поиска"});
         $("#history-item-print").attr({"data-placement":"left","data-toggle":"tooltip", "title":"Печать"});
         $("#arguments_clear_button").attr({"data-placement":"right","data-toggle":"tooltip", "title":"Очистить список аргументов"});
         $("#history-item-link").attr({"data-placement":"left","data-toggle":"tooltip", "title":"Текущая ссылка на вопрос"});
