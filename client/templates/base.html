@@ -79,6 +79,33 @@
     <!-- main content -->
     <div id="main-container" class="main-container row">
         <div class="col-xs-2 col-sm-2 col-md-2">
+            <div id="window-header-tools" class="pull-right">
+                <div id="search-panel">
+                    <form role="search">
+                        <div class="form-group">
+                            <input id="search-input" type="text" class="typeahead form-control" x-webkit-speech sc_control_sys_idtf="ui_control_search_idtf_edit" placeholder="Search..." data-provide="typeahead" autocomplete="off">                            
+                        </div>
+                      {# <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button> #}
+                    </form>
+                </div>
+                <div class="btn-group">
+                    <button id="hypertext_button" type="button" class="btn btn-success ">
+                        <span class="glyphicon glyphicon-font"></span>
+                    </button>
+                    <button type="button" class="histoy-item-btn btn btn-success " data-toggle="dropdown" sc_control_sys_idtf="ui_control_select_window_type">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                    </button>
+                    <ul id="history-item-langs" class="dropdown-menu" role="menu">{# languages will be added #}</ul>
+                    
+                    <button type="button" class="btn btn-primary" id="windows-list">
+                        <span class="glyphicon glyphicon-th-large"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" id="history-item-print" sc_control_sys_idtf="ui_control_print_window_content">
+                        <span class="glyphicon glyphicon-print"></span>
+                    </button>
+                
+                </div>
+            </div>
             <div>
                 <button id="hide-section-button" class="bottom btn btn-primary btn-sm pull-right half_width">
                     <span class="glyphicon glyphicon-remove-sign"></span>
@@ -95,34 +122,6 @@
                 <!-- there will be placed section decomposition -->
             </div>
         </div>
-
-        <div id="window-header-tools" class="pull-right" style="padding-right: 15px;">
-            <div class="btn-group">
-                <button id="hypertext_button" type="button" class="btn btn-success ">
-                    <span class="glyphicon glyphicon-font"></span>
-                </button>
-                <button type="button" class="histoy-item-btn btn btn-success " data-toggle="dropdown" sc_control_sys_idtf="ui_control_select_window_type">
-                    <span class="glyphicon glyphicon-list-alt"></span>
-                </button>
-                <ul id="history-item-langs" class="dropdown-menu" role="menu">{# languages will be added #}</ul>
-                
-                <button type="button" class="btn btn-primary" id="windows-list">
-                    <span class="glyphicon glyphicon-th-large"></span>
-                </button>
-                <button type="button" class="btn btn-default" id="history-item-print" sc_control_sys_idtf="ui_control_print_window_content">
-                    <span class="glyphicon glyphicon-print"></span>
-                </button>
-            </div>
-            
-            <div id="search-panel">
-                <form role="search">
-                  <div class="form-group">
-                    <input id="search-input" type="text" class="typeahead form-control" x-webkit-speech sc_control_sys_idtf="ui_control_search_idtf_edit" style="width: 250px;" placeholder="Search" data-provide="typeahead" autocomplete="off">
-                  </div>
-                  {# <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button> #}
-                </form>
-            </div>
-        </div>
         <div id="window-container" class="col-xs-10 col-sm-10 col-md-10">{# Windows will be added later #}</div>
     </div>
 
@@ -131,7 +130,7 @@
             <div id="arguments_container" class="argument-container">
                 <div class="btn-group">
                     <button id="arguments_clear_button" class="btn btn-danger" sc_control_sys_idtf="ui_control_argument_button_clear"><span class="glyphicon glyphicon-remove-sign"></span></button>
-                    <button id="arguments_add_button" class="btn btn-success" {#sc_control_sys_idtf="ui_control_argument_button_add"#}><span class="glyphicon glyphicon-plus-sign"></span></button>
+                    <!--<button id="arguments_add_button" class="btn btn-success" {#sc_control_sys_idtf="ui_control_argument_button_add"#}><span class="glyphicon glyphicon-plus-sign"></span></button>-->
                 </div>
                 
                 <div id="arguments_buttons" class="btn-group argument-buttons">
@@ -164,6 +163,19 @@
             $.when(SCWeb.core.Main.init(params)).done(function() {
                 SCWeb.ui.Locker.hide();
             });
+        $("navbar navbar-default navbar-fixed-top").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Выберите необходимую команду"});
+        $("#show-section-button").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Развернуть панель"});
+        $("#hide-section-button").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Скрыть панель"});
+        $("#language-select").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Выбор языка"});
+        $("#auth-user-panel").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Вы можете авторизоваться в системе"});
+        $("#search-input").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Введите ключевое слово поиска"});
+        $("#history-item-print").attr({"data-placement":"left","data-toggle":"tooltip", "title":"Печать"});
+        $("#arguments_clear_button").attr({"data-placement":"right","data-toggle":"tooltip", "title":"Очистить список аргументов"});
+        $("#history-item-link").attr({"data-placement":"left","data-toggle":"tooltip", "title":"Текущая ссылка на вопрос"});
+        $(".navbar-nav").attr({"data-placement":"bottom","data-toggle":"tooltip", "title":"Выбор действия в системе"});
+
+      
+        $('[data-toggle="tooltip"]').tooltip();   
         });
 
         

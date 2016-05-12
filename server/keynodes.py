@@ -50,6 +50,7 @@ class KeynodeSysIdentifiers:
     nrel_authors = 'nrel_authors'
     nrel_format = 'nrel_format'
     nrel_mimetype = 'nrel_mimetype'
+    nrel_email = 'nrel_email'
     
     rrel_key_sc_element = 'rrel_key_sc_element'
     sc_definition = 'sc_definition'
@@ -64,6 +65,9 @@ class KeynodeSysIdentifiers:
     question_nrel_answer = 'nrel_answer'
     question_initiated = 'question_initiated'
     question_search_all_output_arcs = 'question_search_all_output_arcs'
+    
+    command = 'command'
+    command_initiated = 'command_initiated'
     
     ui_user = 'ui_user'
     ui_user_registered = 'ui_user_registered'
@@ -80,6 +84,7 @@ class KeynodeSysIdentifiers:
     ui_command_translate_from_sc = 'ui_command_translate_from_sc'
     
     ui_command_initiated = 'ui_command_initiated'
+    ui_command_failed = 'ui_command_failed'
     ui_command_finished = 'ui_command_finished'
     ui_displayed_answer = 'ui_displayed_answer'
     

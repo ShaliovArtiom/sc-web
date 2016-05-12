@@ -113,6 +113,27 @@ SCWeb.core.Main = {
         SCWeb.core.Server.doCommand(cmd_addr, cmd_args, function(result) {
             if (result.question != undefined) {
                 SCWeb.ui.WindowManager.appendHistoryItem(result.question);
+            } else if (result.command != undefined) {
+                
+            } else {
+                alert("There are no any answer. Try another request");
+            }
+        });
+    },
+    
+    /**
+     * Initiate user natural language command
+     * @param {String} query Natural language query
+     */
+    
+    doTextCommand: function(query) {
+        SCWeb.core.Server.textCommand(query, function(result) {
+            if (result.question != undefined) {
+                SCWeb.ui.WindowManager.appendHistoryItem(result.question);
+            } else if (result.command != undefined) {
+
+            } else {
+                alert("There are no any answer. Try another request");
             }
         });
     },
