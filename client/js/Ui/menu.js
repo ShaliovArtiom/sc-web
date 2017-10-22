@@ -27,6 +27,15 @@ SCWeb.ui.Menu = {
         
         this._build(params.menu_commands);
         dfd.resolve();
+
+        SCWeb.core.Server.resolveScAddr(['ui_help_button'], function (keynodes) {
+            $("#help_button").attr("sc_addr", keynodes['ui_help_button']);
+        });
+
+        SCWeb.core.Server.resolveScAddr(['ui_help_icon'], function (keynodes) {
+            $("#help_icon").attr("sc_addr", keynodes['ui_help_icon']);
+        });
+        
         return dfd.promise();
     },
 
