@@ -1,0 +1,7 @@
+ui_login_icon <- ui_icon;;
+
+ui_login_icon => nrel_main_idtf:
+	[Иконка для кнопки входа/регистрации в систему]
+	(* <- lang_ru;; *);
+	[Icon for button of logging in / logging in the system]
+	(* <- lang_en;; *);;

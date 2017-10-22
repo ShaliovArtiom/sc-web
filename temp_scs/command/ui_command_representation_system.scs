@@ -1,0 +1,11 @@
+ui_command_representation_system <- sc_node_not_relation;;
+
+ui_command_representation_system => nrel_main_idtf:
+	[Команда представления системе]
+	(* <- lang_ru;; *);
+	[Command of representation for the system]
+	(* <- lang_en;; *);;
+
+
+
+                

@@ -35,6 +35,10 @@ SCWeb.ui.Menu = {
         SCWeb.core.Server.resolveScAddr(['ui_help_icon'], function (keynodes) {
             $("#help_icon").attr("sc_addr", keynodes['ui_help_icon']);
         });
+
+        SCWeb.core.Server.resolveScAddr(['ui_login_button'], function (keynodes) {
+            $("#auth-user-panel").attr("sc_addr", keynodes['ui_login_button']);
+        });
         
         return dfd.promise();
     },
