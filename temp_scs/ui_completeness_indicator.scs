@@ -1,0 +1,7 @@
+ui_completeness_indicator <- sc_node_not_relation;;
+
+ui_completeness_indicator => nrel_main_idtf:
+	[Показатель полноты выполнения процесса]
+	(* <- lang_ru;; *);
+	[Сompleteness indicator]
+	(* <- lang_en;; *);;

@@ -1,0 +1,7 @@
+ui_command_selection_alternatives <- sc_node_not_relation;;
+
+ui_command_selection_alternatives => nrel_main_idtf:
+	[Команда выбора альтернативы]
+	(* <- lang_ru;; *);
+	[Command of the selection alternatives]
+	(* <- lang_en;; *);;

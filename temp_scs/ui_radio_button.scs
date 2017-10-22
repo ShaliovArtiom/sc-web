@@ -1,0 +1,7 @@
+ui_radio_button <- sc_node_not_relation;;
+
+ui_radio_button => nrel_main_idtf:
+	[Радиокнопка]
+	(* <- lang_ru;; *);
+	[Radio button]
+	(* <- lang_en;; *);;

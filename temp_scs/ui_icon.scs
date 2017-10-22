@@ -1,0 +1,7 @@
+ui_icon <- sc_node_not_relation;;
+
+ui_icon => nrel_main_idtf:
+	[Иконка]
+	(* <- lang_ru;; *);
+	[Icon]
+	(* <- lang_en;; *);;

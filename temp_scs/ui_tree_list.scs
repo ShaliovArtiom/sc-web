@@ -1,0 +1,7 @@
+ui_tree_list <- sc_node_not_relation;;
+
+ui_tree_list => nrel_main_idtf:
+	[Древовидный список]
+	(* <- lang_ru;; *);
+	[Tree list]
+	(* <- lang_en;; *);;

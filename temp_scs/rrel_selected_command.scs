@@ -1,0 +1,7 @@
+rrel_selected_command <- sc_node_role_relation;;
+
+rrel_selected_command => nrel_main_idtf:
+	[Выбранная команда']
+	(* <- lang_ru;; *);
+	[Selected command']
+	(* <- lang_en;; *);;

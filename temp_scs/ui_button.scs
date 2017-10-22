@@ -1,0 +1,11 @@
+ui_button <- sc_node_not_relation;;
+
+ui_button => nrel_main_idtf:
+	[Кнопка]
+	(* <- lang_ru;; *);
+	[Button]
+	(* <- lang_en;; *);;
+
+ui_button => nrel_inclusion: ui_radio_button;
+          => nrel_inclusion: ui_check_box_button;
+          => nrel_inclusion: ui_selector_button;;

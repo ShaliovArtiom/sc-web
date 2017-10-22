@@ -1,0 +1,7 @@
+ui_table_component <- sc_node_not_relation;;
+
+ui_table_component => nrel_main_idtf:
+	[Табличный компонент]
+	(* <- lang_ru;; *);
+	[Table component]
+	(* <- lang_en;; *);;

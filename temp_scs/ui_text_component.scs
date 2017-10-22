@@ -1,0 +1,7 @@
+ui_text_component <- sc_node_not_relation;;
+
+ui_text_component => nrel_main_idtf:
+	[Текстовый компонент]
+	(* <- lang_ru;; *);
+	[Text component]
+	(* <- lang_en;; *);;

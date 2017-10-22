@@ -1,0 +1,12 @@
+ui_top_menu <- sc_node_not_relation;
+<- menu;;
+
+ui_top_menu => nrel_main_idtf:
+	[Верхнее меню]
+	(* <- lang_ru;; *);
+	[Top menu]
+	(* <- lang_en;; *);;
+
+ui_top_menu => nrel_inclusion: ui_start_help;
+            => nrel_inclusion: ui_main_menu;
+            => nrel_inclusion: ui_control_select_idtf_mode;;

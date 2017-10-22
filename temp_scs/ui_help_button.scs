@@ -1,0 +1,12 @@
+ui_help_button <- ui_command_demonstration_help_video ;
+               <- ui_button;;
+
+ui_help_button => nrel_main_idtf:
+	[Кнопка "help"]
+	(* <- lang_ru;; *);
+	[Button icon]
+	(* <- lang_en;; *);;
+
+
+ui_help_button => nrel_main_idtf: ui_help_icon;;
+
