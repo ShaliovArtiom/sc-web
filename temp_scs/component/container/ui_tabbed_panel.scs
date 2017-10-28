@@ -1,0 +1,10 @@
+ui_tabbed_panel <- sc_node_not_relation;;
+
+ui_tabbed_panel => nrel_main_idtf:
+	[Панель с вкладками]
+	(* <- lang_ru;; *);
+	[Tabbed panel]
+	(* <- lang_en;; *);;
+
+ui_tabbed_panel => nrel_inclusion: ui_accordion;
+                => nrel_inclusion: ui_carousel;;

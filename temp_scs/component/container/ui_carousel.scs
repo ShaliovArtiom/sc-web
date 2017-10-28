@@ -1,0 +1,7 @@
+ui_carousel <- sc_node_not_relation;;
+
+ui_carousel => nrel_main_idtf:
+	[Карусель]
+	(* <- lang_ru;; *);
+	[Carousel]
+	(* <- lang_en;; *);;

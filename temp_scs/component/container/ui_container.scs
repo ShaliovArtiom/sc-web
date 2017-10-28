@@ -1,0 +1,12 @@
+ui_container <- sc_node_not_relation;;
+
+ui_container => nrel_main_idtf:
+	[Контейнер]
+	(* <- lang_ru;; *);
+	[Сontainer]
+	(* <- lang_en;; *);;
+
+ui_container => nrel_inclusion: ui_window;
+             => nrel_inclusion: ui_menu;
+             => nrel_inclusion: ui_tabbed_panel;;
+

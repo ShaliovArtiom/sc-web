@@ -1,0 +1,7 @@
+ui_window <- sc_node_not_relation;;
+
+ui_window => nrel_main_idtf:
+	[Окно]
+	(* <- lang_ru;; *);
+	[Window]
+	(* <- lang_en;; *);;

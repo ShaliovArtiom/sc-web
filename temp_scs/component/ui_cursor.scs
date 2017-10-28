@@ -1,0 +1,7 @@
+ui_cursor <- sc_node_not_relation;;
+
+ui_cursor => nrel_main_idtf:
+	[Курсор]
+	(* <- lang_ru;; *);
+	[Сursor]
+	(* <- lang_en;; *);;

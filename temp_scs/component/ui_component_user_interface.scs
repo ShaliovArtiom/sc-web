@@ -1,0 +1,11 @@
+ui_component_user_interface <- sc_node_not_relation;;
+
+ui_component_user_interface => nrel_main_idtf:
+	[Компонент пользовательского интерфейса]
+	(* <- lang_ru;; *);
+	[Component of user interface]
+	(* <- lang_en;; *);;
+
+ui_component_user_interface => nrel_inclusion: ui_control_element; 
+                            => nrel_inclusion: ui_container;
+                            => nrel_inclusion: ui_cursor;;
