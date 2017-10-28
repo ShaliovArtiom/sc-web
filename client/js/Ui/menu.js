@@ -28,16 +28,11 @@ SCWeb.ui.Menu = {
         this._build(params.menu_commands);
         dfd.resolve();
 
-        SCWeb.core.Server.resolveScAddr(['ui_help_button'], function (keynodes) {
-            $("#help_button").attr("sc_addr", keynodes['ui_help_button']);
-        });
-
-        SCWeb.core.Server.resolveScAddr(['ui_help_icon'], function (keynodes) {
-            $("#help_icon").attr("sc_addr", keynodes['ui_help_icon']);
-        });
-
-        SCWeb.core.Server.resolveScAddr(['ui_login_button'], function (keynodes) {
+        SCWeb.core.Server.resolveScAddr(['ui_top_menu', 'ui_login_button', 'ui_help_button', 'ui_help_icon'], function (keynodes) {
+            $("#bs-example-navbar-collapse-1").attr("sc_addr", keynodes['ui_top_menu']);
             $("#auth-user-panel").attr("sc_addr", keynodes['ui_login_button']);
+            $("#help_button").attr("sc_addr", keynodes['ui_help_button']);
+            $("#help_icon").attr("sc_addr", keynodes['ui_help_icon']);            
         });
         
         return dfd.promise();
