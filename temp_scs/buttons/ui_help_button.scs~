@@ -4,7 +4,7 @@ ui_help_button <- ui_command_demonstration_help_video ;
 ui_help_button => nrel_main_idtf:
 	[Кнопка "help"]
 	(* <- lang_ru;; *);
-	[Help button]
+	[Button of help]
 	(* <- lang_en;; *);;
 
 
