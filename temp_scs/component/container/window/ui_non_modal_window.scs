@@ -1,0 +1,7 @@
+ui_non_modal_window <- sc_node_not_relation;;
+
+ui_non_modal_window => nrel_main_idtf:
+	[Немодальное окно]
+	(* <- lang_ru;; *);
+	[Non-modal window]
+	(* <- lang_en;; *);;

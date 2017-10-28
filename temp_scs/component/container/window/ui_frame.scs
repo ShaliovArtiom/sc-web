@@ -1,0 +1,7 @@
+ui_frame <- sc_node_not_relation;;
+
+ui_frame => nrel_main_idtf:
+	[Фрейм]
+	(* <- lang_ru;; *);
+	[Frame]
+	(* <- lang_en;; *);;

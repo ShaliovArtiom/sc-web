@@ -1,0 +1,7 @@
+ui_contour_window <- sc_node_not_relation;;
+
+ui_contour_window => nrel_main_idtf:
+	[Контурное окно]
+	(* <- lang_ru;; *);
+	[Contour window]
+	(* <- lang_en;; *);;

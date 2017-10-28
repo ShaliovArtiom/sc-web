@@ -1,0 +1,7 @@
+ui_window_with_vertical_scroll_bar <- sc_node_not_relation;;
+
+ui_window_with_vertical_scroll_bar => nrel_main_idtf:
+	[Окно с вертикальной полосой прокрутки]
+	(* <- lang_ru;; *);
+	[Window with vertical scroll bar]
+	(* <- lang_en;; *);;

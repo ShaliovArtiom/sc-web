@@ -1,0 +1,7 @@
+ui_modal_window <- sc_node_not_relation;;
+
+ui_modal_window => nrel_main_idtf:
+	[Модальное окно]
+	(* <- lang_ru;; *);
+	[Modal window]
+	(* <- lang_en;; *);;

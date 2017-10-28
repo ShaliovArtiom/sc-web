@@ -1,0 +1,7 @@
+ui_frame_window <- sc_node_not_relation;;
+
+ui_frame_window => nrel_main_idtf:
+	[Рамочное окно]
+	(* <- lang_ru;; *);
+	[Frame window]
+	(* <- lang_en;; *);;

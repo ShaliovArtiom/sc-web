@@ -1,0 +1,10 @@
+ui_dialog_window <- sc_node_not_relation;;
+
+ui_dialog_window => nrel_main_idtf:
+	[диалоговое окно]
+	(* <- lang_ru;; *);
+	[Dialog window]
+	(* <- lang_en;; *);;
+
+ui_dialog_window => nrel_subdividing: ui_modal_window;
+                 => nrel_subdividing: ui_non_modal_window;;
