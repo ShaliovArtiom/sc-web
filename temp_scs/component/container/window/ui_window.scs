@@ -1,0 +1,22 @@
+ui_window <- sc_node_not_relation;;
+
+ui_window => nrel_main_idtf:
+	[Окно]
+	(* <- lang_ru;; *);
+	[Window]
+	(* <- lang_en;; *);;
+
+ui_window => nrel_inclusion: ui_main_window;
+		  => nrel_inclusion: ui_dialog_window;
+		  => nrel_inclusion: ui_frame;;
+
+ui_window => nrel_subdividing: ui_frame_window;
+		  => nrel_subdividing: ui_contour_window;;	
+
+ui_window => nrel_subdividing: ui_permanent_window;
+		  => nrel_subdividing: ui_time_window;;
+
+ui_window => nrel_subdividing: ui_window_without_scroll_bar;
+		  => nrel_subdividing: ui_window_with_horizontal_scroll_bar;
+		  => nrel_subdividing: ui_window_with_vertical_scroll_bar;
+		  => nrel_subdividing: ui_window_with_horizontal_and_vertical_scroll_bars;;

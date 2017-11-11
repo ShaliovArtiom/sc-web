@@ -1,0 +1,9 @@
+ui_time_window <- sc_node_not_relation;;
+
+ui_time_window => nrel_main_idtf:
+	[Временное окно]
+	(* <- lang_ru;; *);
+	[Time window]
+	(* <- lang_en;; *);;
+
+ui_time_window => nrel_inclusion: ui_pop_up_window;;

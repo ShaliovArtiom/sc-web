@@ -1,0 +1,7 @@
+ui_pop_up_window <- sc_node_not_relation;;
+
+ui_pop_up_window => nrel_main_idtf:
+	[Всплывающее окно]
+	(* <- lang_ru;; *);
+	[Pop-up window]
+	(* <- lang_en;; *);;

@@ -1,0 +1,7 @@
+ui_permanent_window <- sc_node_not_relation;;
+
+ui_permanent_window => nrel_main_idtf:
+	[Постоянное окно]
+	(* <- lang_ru;; *);
+	[Permanent window]
+	(* <- lang_en;; *);;

@@ -1,0 +1,7 @@
+ui_window_without_scroll_bar <- sc_node_not_relation;;
+
+ui_window_without_scroll_bar => nrel_main_idtf:
+	[Окно без полосы прокрутки]
+	(* <- lang_ru;; *);
+	[Window without scroll bar]
+	(* <- lang_en;; *);;
