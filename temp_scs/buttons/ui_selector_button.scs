@@ -1,0 +1,7 @@
+ui_selector_button <- sc_node_not_relation;;
+
+ui_selector_button => nrel_main_idtf:
+	[Кнопка-селектор]
+	(* <- lang_ru;; *);
+	[Selector button]
+	(* <- lang_en;; *);;

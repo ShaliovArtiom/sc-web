@@ -1,0 +1,7 @@
+video <- sc_node_not_relation;;
+
+video => nrel_main_idtf:
+	[Видеоролик]
+	(* <- lang_ru;; *);
+	[Video]
+	(* <- lang_en;; *);;

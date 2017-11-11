@@ -1,0 +1,10 @@
+ui_label <- sc_node_not_relation;;
+
+ui_label => nrel_main_idtf:
+	[Метка]
+	(* <- lang_ru;; *);
+	[Label]
+	(* <- lang_en;; *);;
+
+    ui_label => nrel_inclusion: ui_text_label;
+             => nrel_inclusion: ui_icon;;

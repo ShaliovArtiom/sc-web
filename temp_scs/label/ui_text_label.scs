@@ -1,0 +1,7 @@
+ui_text_label <- sc_node_not_relation;;
+
+ui_text_label => nrel_main_idtf:
+	[Текстовая метка]
+	(* <- lang_ru;; *);
+	[Label of text]
+	(* <- lang_en;; *);;

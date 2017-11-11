@@ -1,0 +1,7 @@
+ui_slider <- sc_node_not_relation;;
+
+ui_slider => nrel_main_idtf:
+	[Слайдер]
+	(* <- lang_ru;; *);
+	[Slider]
+	(* <- lang_en;; *);;

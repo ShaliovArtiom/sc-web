@@ -1,0 +1,7 @@
+ui_command_demonstration_help_video <- sc_node_not_relation;;
+
+ui_command_demonstration_help_video => nrel_main_idtf:
+	[Команда демонстрации справочного видеоролика]
+	(* <- lang_ru;; *);
+	[Сommand of demonstration the help video]
+	(* <- lang_en;; *);;

@@ -1,0 +1,7 @@
+ui_menu <- sc_node_not_relation;;
+
+ui_menu => nrel_main_idtf:
+	[Меню]
+	(* <- lang_ru;; *);
+	[Menu]
+	(* <- lang_en;; *);;

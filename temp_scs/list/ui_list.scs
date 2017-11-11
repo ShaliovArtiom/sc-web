@@ -1,0 +1,10 @@
+ui_list <- sc_node_not_relation;;
+
+ui_list => nrel_main_idtf:
+	[Список]
+	(* <- lang_ru;; *);
+	[List]
+	(* <- lang_en;; *);;
+
+ui_list => nrel_inclusion: ui_drop_down_list;
+        => nrel_inclusion: ui_tree_list;;

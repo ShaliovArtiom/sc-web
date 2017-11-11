@@ -1,0 +1,16 @@
+command_set_russian_identification_language <- sc_node_not_relation;;
+
+command_set_russian_identification_language => nrel_main_idtf:
+	[Команда установки русского языка идентификации]
+	(* <- lang_ru;; *);
+	[The command to set the Russian identification language]
+	(* <- lang_en;; *);;
+
+
+command_set_english_identification_language <- sc_node_not_relation;;
+
+command_set_russian_identification_language => nrel_main_idtf:
+	[Команда установки английского языка идентификации]
+	(* <- lang_ru;; *);
+	[The command to set the English identification language]
+	(* <- lang_en;; *);;

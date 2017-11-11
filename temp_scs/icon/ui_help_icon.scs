@@ -1,0 +1,7 @@
+ui_help_icon <- ui_icon;;
+
+ui_help_icon => nrel_main_idtf:
+	[Иконка "help"]
+	(* <- lang_ru;; *);
+	[Help icon]
+	(* <- lang_en;; *);;

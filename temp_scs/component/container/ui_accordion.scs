@@ -1,0 +1,7 @@
+ui_accordion <- sc_node_not_relation;;
+
+ui_accordion => nrel_main_idtf:
+	[Аккардеон]
+	(* <- lang_ru;; *);
+	[Accordion]
+	(* <- lang_en;; *);;

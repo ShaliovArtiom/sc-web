@@ -1,0 +1,16 @@
+ui_control_element <- sc_node_not_relation;;
+
+ui_control_element => nrel_main_idtf:
+	[Элемент управления]
+	(* <- lang_ru;; *);
+	[Сontrol element]
+	(* <- lang_en;; *);;
+
+ui_control_element => nrel_inclusion: ui_label;
+                   => nrel_inclusion: ui_button;
+                   => nrel_inclusion: ui_list;
+                   => nrel_inclusion: ui_text_component;
+                   => nrel_inclusion: ui_table_component;
+                   => nrel_inclusion: ui_slider;
+                   => nrel_inclusion: ui_completeness_indicator;;
+
