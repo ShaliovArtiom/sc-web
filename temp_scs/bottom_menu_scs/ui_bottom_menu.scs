@@ -1,0 +1,12 @@
+ui_bottom_menu <- sc_node_not_relation;
+               <- ui_menu;;
+
+ui_bottom_menu => nrel_main_idtf:
+	[Нижнее меню]
+	(* <- lang_ru;; *);
+	[Bottom menu]
+	(* <- lang_en;; *);;
+
+
+ui_bottom_menu => nrel_inclusion: ui_control_argument_button_clear;
+               => nrel_inclusion: ui_bottom;;              

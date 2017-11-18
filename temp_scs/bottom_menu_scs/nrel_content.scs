@@ -1,0 +1,7 @@
+nrel_content <- sc_node_not_relation;;
+
+nrel_content => nrel_main_idtf:
+	[Содержимое]
+	(* <- lang_ru;; *);
+	[Content]
+	(* <- lang_en;; *);;

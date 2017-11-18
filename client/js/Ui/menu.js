@@ -50,7 +50,12 @@ SCWeb.ui.Menu = {
             $("#windows-list").attr("sc_addr", keynodes['ui_button_of_creating_contour_window']);
             $("#button-for-displaying-hypertext-content").attr("sc_addr", keynodes['ui_button_for_displaying_hypertext_content']);
         });
-
+        
+        SCWeb.core.Server.resolveScAddr(['ui_bottom_menu', 'ui_bottom_menu_text_lable'], function (keynodes) {
+            $("#footer").attr("sc_addr", keynodes['ui_bottom_menu']);
+            $("#bottom-menu-text-lable").attr("sc_addr", keynodes['ui_bottom_menu_text_lable']);            
+        });
+        
         
 
         return dfd.promise();
