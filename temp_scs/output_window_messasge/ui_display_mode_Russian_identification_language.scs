@@ -1,0 +1,7 @@
+ui_display_mode_Russian_identification_language <- sc_node_not_relation;;
+
+ui_display_mode_Russian_identification_language => nrel_main_idtf:
+	[Режим отображения Русского языка  идентификации]
+	(* <- lang_ru;; *);
+	[Display mode Russian identification language]
+	(* <- lang_en;; *);;         

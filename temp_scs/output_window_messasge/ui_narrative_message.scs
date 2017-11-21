@@ -1,0 +1,7 @@
+ui_narrative_message <- sc_node_not_relation;;
+
+ui_narrative_message => nrel_main_idtf:
+	[Повествовательное сообщение]
+	(* <- lang_ru;; *);
+	[Narrative message]
+	(* <- lang_en;; *);;         

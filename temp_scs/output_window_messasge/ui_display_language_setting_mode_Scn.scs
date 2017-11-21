@@ -1,0 +1,7 @@
+ui_display_language_setting_mode_Scn <- sc_node_not_relation;;
+
+ui_display_language_setting_mode_Scn => nrel_main_idtf:
+	[Режим установки языка отображения Scn]
+	(* <- lang_ru;; *);
+	[Display language setting mode Scn]
+	(* <- lang_en;; *);;         

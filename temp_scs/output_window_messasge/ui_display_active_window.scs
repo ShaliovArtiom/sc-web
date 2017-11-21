@@ -1,0 +1,7 @@
+ui_display_active_window <- sc_node_not_relation;;
+
+ui_display_active_window => nrel_main_idtf:
+	[Режим активного окна]
+	(* <- lang_ru;; *);
+	[Display active window]
+	(* <- lang_en;; *);;         

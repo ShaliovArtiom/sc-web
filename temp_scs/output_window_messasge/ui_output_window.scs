@@ -1,0 +1,20 @@
+ui_output_window = [
+
+];;
+
+ui_output_window => nrel_main_idtf:
+	[Окно вывода]
+	(* <- lang_ru;; *);
+	[Output window]
+	(* <- lang_en;; *);;
+
+
+ui_output_window <- ui_message_of_ostis_system;
+                 <- ui_narrative_message;
+                 <- ui_contour_window;
+                 <- ui_display_language_setting_mode_Scn;
+                 <- ui_display_mode_Russian_identification_language;
+                 <- ui_display_active_window;;
+
+ui_output_window -> rrel_key_sc_element: knowledge_base_ims;;           
+

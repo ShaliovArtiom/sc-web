@@ -1,0 +1,5 @@
+knowledge_base_ims => nrel_main_idtf:
+	[База знаний Ims]
+	(* <- lang_ru;; *);
+	[Knowledge base ims]
+	(* <- lang_en;; *);;         
